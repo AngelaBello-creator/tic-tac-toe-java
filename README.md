@@ -53,6 +53,8 @@ Aquí tienes un **diagrama de flujo** del funcionamiento del juego:
    v
 [Repetir ciclo]
 
+```
+
 ## Tecnologías Utilizadas
 
 - WIP
@@ -71,4 +73,4 @@ WIP
 
 [Daniella Pacheco](https://github.com/DaniPacheco8) → Scrum Master & Developer
 
-```
+
