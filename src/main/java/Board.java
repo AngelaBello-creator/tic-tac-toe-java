@@ -24,6 +24,9 @@ public class Board {
             System.out.println();
         }
     }
+    public char getCell(int row, int col) {
+    return board[row][col];
+}
 
     public void placeMark(int row, int col, char mark) {
         if (row >= 0 && row < 3 && col >= 0 && col < 3) {
