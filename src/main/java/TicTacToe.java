@@ -10,13 +10,16 @@ public class TicTacToe {
         System.out.println("Bienvenida al Tres en Raya");
         b.printBoard();
 
+        System.out.print("Elige tu ficha (X/O): ");
+        char mark = sc.next().toUpperCase().charAt(0);
+
         System.out.print("Introduce fila (0-2): ");
         int row = sc.nextInt();
 
         System.out.print("Introduce columna (0-2): ");
         int col = sc.nextInt();
 
-        b.placeMark(row, col, 'X');
+        b.placeMark(row, col, mark);
 
         b.printBoard();
 
