@@ -1,5 +1,7 @@
+package main.java;
+
 public class Board {
-    private char[][] board;
+    private char[][] board; 
 
     public Board() {
         board = new char[3][3];
@@ -20,6 +22,18 @@ public class Board {
                 System.out.print(board[i][j] + " ");
             }
             System.out.println();
+        }
+    }
+
+    public void placeMark(int row, int col, char mark) {
+        if (row >= 0 && row < 3 && col >= 0 && col < 3) {
+            if (board[row][col] == '-') {
+                board[row][col] = mark;
+            } else {
+                System.out.println("Esa casilla ya está ocupada");
+            }
+        } else {
+            System.out.println("Posición inválida");
         }
     }
 }
