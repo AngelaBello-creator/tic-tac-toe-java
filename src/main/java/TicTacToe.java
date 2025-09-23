@@ -37,7 +37,11 @@ public class TicTacToe {
 
             b.placeMark(row, col, currentPlayer);
 
+            if (b.getCell(row, col) == currentPlayer) 
+            {
             currentPlayer = (currentPlayer == player1) ? player2 : player1;
+
+            }
         }
 
         sc.close();
