@@ -7,21 +7,38 @@ public class TicTacToe {
         Board b = new Board();
         Scanner sc = new Scanner(System.in);
 
+        System.out.print("Jugador 1, elige tu marca (X u O): ");
+        char player1 = sc.next().toUpperCase().charAt(0);
+
+        while (player1 != 'X' && player1 != 'O') {
+            System.out.print("Solo puedes elegir X u O: ");
+            player1 = sc.next().toUpperCase().charAt(0);
+        }
+
+        char player2 = (player1 == 'X') ? 'O' : 'X';
+
+        char currentPlayer = player1;
+
         System.out.println("Bienvenida al Tres en Raya");
-        b.printBoard();
+        System.out.println("Jugador 1: " + player1 + " | Jugador 2: " + player2);
 
-        System.out.print("Elige tu ficha (X/O): ");
-        char mark = sc.next().toUpperCase().charAt(0);
+        boolean playing = true;
 
-        System.out.print("Introduce fila (0-2): ");
-        int row = sc.nextInt();
+        while (playing) {
+            b.printBoard();
 
-        System.out.print("Introduce columna (0-2): ");
-        int col = sc.nextInt();
+            System.out.println("Turno del jugador " + currentPlayer);
 
-        b.placeMark(row, col, mark);
+            System.out.print("Introduce fila (0-2): ");
+            int row = sc.nextInt();
 
-        b.printBoard();
+            System.out.print("Introduce columna (0-2): ");
+            int col = sc.nextInt();
+
+            b.placeMark(row, col, currentPlayer);
+
+            currentPlayer = (currentPlayer == player1) ? player2 : player1;
+        }
 
         sc.close();
     }
