@@ -23,11 +23,11 @@ public class Welcome {
                 """;
 
         String msg = """
-                ¡Bienvenid@ al Tres en Raya! ✨
+                ¡Bienvenid@ al Tres en Raya!
 
                 Reglas rápidas:
                 - El Jugador 1 elige si quiere ser X u O.
-                - Los turnos se alternan colocando marcas en la cuadrícula (0–2).
+                - Los turnos se alternan colocando marcas en la cuadrícula (0-2).
                 - Gana quien alinee 3 marcas en fila, columna o diagonal.
 
                 ¡Que empiece la partida!
