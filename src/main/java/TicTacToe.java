@@ -7,6 +7,8 @@ public class TicTacToe {
         Board b = new Board();
         Scanner sc = new Scanner(System.in);
 
+        Welcome.printWelcomeMessage();
+
         System.out.print("Jugador 1, elige tu marca (X u O): ");
         char player1 = sc.next().toUpperCase().charAt(0);
 
@@ -19,7 +21,6 @@ public class TicTacToe {
 
         char currentPlayer = player1;
 
-        System.out.println("Bienvenida al Tres en Raya");
         System.out.println("Jugador 1: " + player1 + " | Jugador 2: " + player2);
 
         boolean playing = true;
@@ -37,19 +38,18 @@ public class TicTacToe {
 
             b.placeMark(row, col, currentPlayer);
 
-                  if (b.checkWinner(currentPlayer)) {
+            if (b.checkWinner(currentPlayer)) {
                 b.printBoard();
                 System.out.println(" El jugador " + currentPlayer + " ha ganado!");
                 break;
             }
-                if (b.isBoardFull()) {
-                    b.printBoard();
-                    System.out.println("Empate!");
-                    break;
-                }
-            if (b.getCell(row, col) == currentPlayer) 
-            {
-            currentPlayer = (currentPlayer == player1) ? player2 : player1;
+            if (b.isBoardFull()) {
+                b.printBoard();
+                System.out.println("Empate!");
+                break;
+            }
+            if (b.getCell(row, col) == currentPlayer) {
+                currentPlayer = (currentPlayer == player1) ? player2 : player1;
 
             }
         }
