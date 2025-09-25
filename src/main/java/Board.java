@@ -16,14 +16,21 @@ public class Board {
         }
     }
 
-    public void printBoard() {
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                System.out.print(board[i][j] + " ");
+public void printBoard() {
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            char cell = board[i][j];
+            if (cell == 'X') {
+                System.out.print("\u001B[38;5;199m" + cell + "\u001B[0m "); 
+            } else if (cell == 'O') {
+                System.out.print("\u001B[38;5;45m" + cell + "\u001B[0m ");  
+            } else {
+                System.out.print(cell + " "); 
             }
-            System.out.println();
         }
+        System.out.println();
     }
+}
 
     public char getCell(int row, int col) {
         return board[row][col];
