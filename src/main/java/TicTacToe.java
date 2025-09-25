@@ -37,6 +37,16 @@ public class TicTacToe {
 
             b.placeMark(row, col, currentPlayer);
 
+                  if (b.checkWinner(currentPlayer)) {
+                b.printBoard();
+                System.out.println(" El jugador " + currentPlayer + " ha ganado!");
+                break;
+            }
+                if (b.isBoardFull()) {
+                    b.printBoard();
+                    System.out.println("Empate!");
+                    break;
+                }
             if (b.getCell(row, col) == currentPlayer) 
             {
             currentPlayer = (currentPlayer == player1) ? player2 : player1;
