@@ -20,7 +20,7 @@ Este proyecto consiste en el desarrollo del clásico juego **Tic Tac Toe** (Tres
 
 Aquí tienes un **diagrama de flujo** del funcionamiento del juego:
 
-[Diagrama Flujo] (https://www.figma.com/design/GfNkxtpbtEDwALxkxmnRwz/Cruz-y-raya?node-id=0-1&p=f&t=cCWRPt9r5CkgvQZz-0)
+[Diagrama Flujo](https://www.figma.com/design/GfNkxtpbtEDwALxkxmnRwz/Cruz-y-raya?node-id=0-1&p=f&t=cCWRPt9r5CkgvQZz-0)
 
 ## Tecnologías Utilizadas
 
