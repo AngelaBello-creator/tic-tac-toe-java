@@ -26,7 +26,8 @@ Aquí tienes un **diagrama de flujo** del funcionamiento del juego:
 
 - **Versión de Java:** 21.0.6
 - **Scanner** para entrada de datos
-- **JUnit 5:** 5.13.4
+- **Apache Maven**: 3.13.0
+- **JUnit 5:** 5.11.0
 
 ## Instalación y Ejecución
 
