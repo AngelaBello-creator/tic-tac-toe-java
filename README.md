@@ -51,15 +51,15 @@ java TicTacToe
 
 ## Funcionalidades Implementadas
 
-✅ Creación de tablero vacío
+✅  Creación de tablero vacío
 
-✅ Elección del jugador (`X` o `O`).
+✅  Elección del jugador (`X` o `O`).
 
-✅ Alternancia entre jugadores (`X` y `O`).
+✅  Alternancia entre jugadores (`X` y `O`).
 
-✅ Validación de movimientos
+✅  Validación de movimientos
 
-✅ Detección de ganador o empate
+✅  Detección de ganador o empate
 
 ## Equipo
 
