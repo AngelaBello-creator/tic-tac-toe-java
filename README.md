@@ -1,6 +1,6 @@
 # 🎮 Tic Tac Toe - Tres en Raya en Java
 
-¡Bienvenide a **Tic Tac Toe**!
+¡Bienvenid@ a **Tic Tac Toe**!
 
 ## Descripción
 
@@ -20,57 +20,50 @@ Este proyecto consiste en el desarrollo del clásico juego **Tic Tac Toe** (Tres
 
 Aquí tienes un **diagrama de flujo** del funcionamiento del juego:
 
-```text
-[Inicio]
-   |
-   v
-[Mostrar tablero vacío]
-   |
-   v
-[Jugador actual hace movimiento]
-   |
-   v
-[¿Casilla libre?]---NO--->[Mostrar error y pedir de nuevo]
-   |
-   SI
-   v
-[Colocar ficha en tablero]
-   |
-   v
-[Mostrar tablero actualizado]
-   |
-   v
-[¿Hay ganador?]---SI--->[Mostrar "Ganó X/O"]--->[Fin]
-   |
-   NO
-   v
-[¿Tablero lleno?]---SI--->[Mostrar "Empate"]--->[Fin]
-   |
-   NO
-   v
-[Cambiar turno (X <-> O)]
-   |
-   v
-[Repetir ciclo]
-
-```
+[Diagrama Flujo](https://www.figma.com/design/GfNkxtpbtEDwALxkxmnRwz/Cruz-y-raya?node-id=0-1&p=f&t=cCWRPt9r5CkgvQZz-0)
 
 ## Tecnologías Utilizadas
 
-- WIP
+- **Versión de Java:** 21.0.6
+- **Scanner** para entrada de datos
+- **Apache Maven**: 3.13.0
+- **JUnit 5:** 5.11.0
 
 ## Instalación y Ejecución
-WIP
+
+### 1 Clonar el Repositorio
+
+```bash
+git clone https://github.com/tu-usuario/tic-tac-toe-java.git
+cd tic-tac-toe-java
+```
+
+### 2 Compilar el Código
+
+```java
+javac TicTacToe.java
+```
+
+### 3 Ejecutar el Juego
+
+```java
+java TicTacToe
+```
 
 ## Funcionalidades Implementadas
 
-WIP
-- ✅
+✅  Creación de tablero vacío
+
+✅  Elección del jugador (`X` o `O`).
+
+✅  Alternancia entre jugadores (`X` y `O`).
+
+✅  Validación de movimientos
+
+✅  Detección de ganador o empate
 
 ## Equipo
 
 [Angela Bello](https://github.com/AngelaBello-creator) → Product Owner & Developer
 
 [Daniella Pacheco](https://github.com/DaniPacheco8) → Scrum Master & Developer
-
-
