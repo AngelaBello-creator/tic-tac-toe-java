@@ -26,8 +26,8 @@ class BoardTest {
 
     @Test
     void placeMark_placesCorrectly() {
-        board.placeMark(1, 1, 'X'); // <- sem parâmetros nomeados
-        assertEquals('X', board.getCell(1, 1)); // <- idem
+        board.placeMark(1, 1, 'X'); 
+        assertEquals('X', board.getCell(1, 1)); 
     }
 
     @Test
